@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E9EFEC;
+    margin: 0;
+    padding: 0;
+}
+
+#resume-section{
+    background-color: #C4DAD2;
+    margin: 100px 250px 100px 250px;
+    
+}
+
+#form-section{
+    background-color: #C4DAD2;
+    margin: 100px 350px 100px 350px;
+}
+
+
+.style-inputfields{
+    padding: 8px;
+    border-radius: 7px;
+    background-color: #E9EFEC;
+}
+.style-textareafields{
+    padding: 8px;
+    border-radius: 7px;
+    background-color: #E9EFEC;
+}
+
+label{
+    margin-left: 60px;
+}
+
+textarea{
+    margin-left: 60px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+
+h2{
+    
+   background-color: #6A9C89;
+   color: white;
+    margin-top: 30px;
+    padding: 10px;    
+}
+
+button{
+    background-color: #16423C;
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 3px;
+    margin-left: 60px;
+    height: 35px;
+    width: 250px;
+
+}
+
+button:hover{
+    transition: 50%;
+    opacity: 80%;
+    
+}
+
+/* css specific for resume */
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #16423C;
+    color: white;
+    align-items: center;
+    height: 120px;
+       
+}
+
+img{
+    width: 85px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 60px;
+}
+
+#profilePic{
+    margin-right: 50px;
+}
+
+#display-name{
+    margin-left: 10px;
+}

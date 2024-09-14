@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Resume (milestone03)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-containers" id="form-section">
+        <h1 >Dynamic Resume Builder</h1>
+        <p>(Fill the given form with correct information to generate resume)</p>
+        <!-- Form Section -->
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="name" >Name:</label>
+            <input type="text" id="name" class="style-inputfields" placeholder="Enter Your Name" required/><br/><br/>
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="style-inputfields" placeholder="Enter Your Email" required/><br/><br/>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" class="style-inputfields" placeholder="Enter Your Phone Number" required/><br/><br/>
+            <label for="LinkedInId">LinkedInId:</label>
+            <input type="text" id="LinkedInId" class="style-inputfields" placeholder="Enter Your LinkedIn Id URL" required/><br/><br/>
+            <label for="profilepic">Profile Picture:</label>
+            <input type="file" id="image-input" class="style-inputfields" accept="image/*"/><br/><br/>
+
+            <h2>Education</h2>
+           
+            <textarea id="education" rows="4" class="style-textareafields" placeholder="Degrees Name(Comma Separated)" required></textarea><br/><br/>
+
+            <h2>Experience</h2>
+            
+            <textarea id="experience" rows="4" class="style-textareafields" placeholder="Put Experiences(Comma Separated)" required></textarea><br/><br/>
+
+            <h2>Skills</h2>
+            
+            <textarea id="skills" rows="4" class="style-textareafields" placeholder="Put Skills(Comma Separated)" required></textarea><br/><br/>
+
+            <button type="submit">Generate Resume</button>
+            <br/><br/>
+        </form>
+    </div>    
+
+
+    <div class="main-containers" id="resume-section">
+        <!-- Resume Display Section -->
+        <header>
+            <div id="header">
+            <div>
+                <h1 id="display-name"></h1>
+            </div>
+            <div><img id="image-display" src="" alt="myPic" /></div>
+            </div>
+        </header>
+    
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="second-headings">Contact Information</h2>
+            <ul>
+                <li id="display-email">Email: </li>
+                <li id="dispaly-phone">Phone: </li>
+                <li>LinkedIn: <a href="">linkedin.com/in/sherazi</a></li>
+            </ul>
+        </section>
+    
+        <!-- Education Section -->
+        <section >
+            <h2 class="second-headings">Education</h2>
+           <ul id="display-education"></ul>
+        </section>
+    
+    
+        <!-- Work Experience Section -->
+        <section >
+            <h2 class="second-headings">Work Experience</h2>
+              <ul id="display-work-experience"></ul>            
+        </section>
+    
+        
+        <!-- Skills Section -->
+        <section id="skill-section">
+            <h2 class="second-headings">Skills</h2>
+            <ul id="display-skills"></ul>
+        </section>
+        <button id="toggle-skills">Toggle Skills Section</button>
+        <br />
+        <br />
+    </div> 
+
+    <script src="./app.js"></script>
+</body>
+</html>
