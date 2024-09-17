@@ -116,7 +116,7 @@ img{
 }
 
 
-@media (max-width : 700px){
+@media (max-width : 850px){
     button{
         margin-left: 20px;
         width: 150px;
