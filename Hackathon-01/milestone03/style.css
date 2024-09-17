@@ -7,14 +7,17 @@ body {
 
 #resume-section{
     background-color: #C4DAD2;
-    margin: 100px 250px 100px 250px;
+    margin: 50px 100px 50px 100px;
     
 }
 
-#form-section{
+fieldset{
     background-color: #C4DAD2;
-    margin: 100px 150px 100px 150px;
+    margin: 50px 200px 50px 200px;
+    border-radius: 8px;
+    border: #16423C solid ;
 }
+
 
 .style-inputfields{
     padding: 8px;
@@ -31,16 +34,38 @@ label{
     margin-left: 60px;
 }
 
+input{
+    width:280px;
+    border: #16423C solid ;
+    background-color:  #E9EFEC;
+
+}
+
+#LinkedInId{
+    width: 250px;
+}
+
+#image-input{
+    width: 230px;
+}
+
+
+
 textarea{
     margin-left: 60px;
+    width: 340px;
+    border: #16423C solid ;
+    background-color:  #E9EFEC;
 }
 
-h1{
+#heading{
     text-align: center;
-}
-
-p{
-    text-align: center;
+    background-color: #16423C;
+    color: white;
+    height: 120px;
+    margin: 50px 200px 50px 200px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 
@@ -58,11 +83,12 @@ button{
     cursor: pointer;
     border-radius: 7px;
     padding: 3px;
-    margin-left: 60px;
+    margin-left: 200px;
     height: 35px;
     width: 250px;
 
 }
+
 
 button:hover{
     transition: 50%;
@@ -85,13 +111,65 @@ img{
     width: 85px;
     height: 100px;
     border-radius: 50%;
-    margin-right: 100px;
+    margin-right: 60px;
 }
 
-#profilePic{
-    margin-right: 50px;
-}
 
 #display-name{
     margin-left: 10px;
+}
+
+
+@media (max-width : 850px){
+    button{
+        margin-left: 20px;
+        width: 150px;
+    }
+
+    #LinkedInId{
+        width: 165px;
+    }
+    
+    #image-input{
+        width: 176px;
+    }
+
+    input{
+        width: 190px;
+    }
+
+    label{
+        margin-left: 10px;
+    }
+    
+    textarea{
+        margin-left: 0px;
+        width: 240px;
+    }
+
+
+    #resume-section{
+        margin: 30px 20px 30px 20px;
+        
+    }
+
+    #heading{
+        margin: 30px 20px 30px 20px;
+        height: 170px;
+        padding: 5px;
+    }
+    
+    fieldset{
+        margin: 30px 20px 30px 20px;
+    }
+
+    
+    #image-display{
+        margin-right: 8px;
+    }
+
+    #display-name{
+        margin-left: 5px;
+    }
+
 }
