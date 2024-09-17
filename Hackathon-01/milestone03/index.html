@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Resume (milestone03)</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main-containers" id="form-section">
-        <h1 >Dynamic Resume Builder</h1>
-        <p>(Fill the given form with correct information to generate resume)</p>
+        <div id="heading">
+        <span><h1 >Dynamic Resume Builder</h1></span>
+        <span><p>(Fill the given form with correct information to generate resume)</p></span>
+        </div>
         <!-- Form Section -->
         <form id="resume-form">
-            <h2>Personal Information</h2>
+            <!-- Field For Personal Information -->
+            <fieldset>
+            <legend><h2>Personal Information</h2></legend>
             <label for="name" >Name:</label>
-            <input type="text" id="name" class="style-inputfields" placeholder="Enter Your Name" required/><br/><br/>
+            <input type="text" id="name" class="style-inputfields"  placeholder="Enter Your Name" required/><br/><br/>
             <label for="email">Email:</label>
-            <input type="email" id="email" class="style-inputfields" placeholder="Enter Your Email" required/><br/><br/>
+            <input type="email" id="email" class="style-inputfields"  placeholder="Enter Your Email" required/><br/><br/>
             <label for="phone">Phone:</label>
-            <input type="text" id="phone" class="style-inputfields" placeholder="Enter Your Phone Number" required/><br/><br/>
+            <input type="text" id="phone" class="style-inputfields"  placeholder="Enter Your Phone Number" required/><br/><br/>
             <label for="LinkedInId">LinkedInId:</label>
-            <input type="text" id="LinkedInId" class="style-inputfields" placeholder="Enter Your LinkedIn Id URL" required/><br/><br/>
+            <input type="text" id="LinkedInId" class="style-inputfields"  placeholder="Enter Your LinkedIn Id URL" required/><br/><br/>
             <label for="profilepic">Profile Picture:</label>
-            <input type="file" id="image-input" class="style-inputfields" accept="image/*"/><br/><br/>
+            <input type="file" id="image-input" class="style-inputfields"  accept="image/*"/><br/><br/>
+           </fieldset>
 
-            <h2>Education</h2>
+            <!-- Field For Education -->
+           <fieldset>
+            <legend><h2>Education</h2></legend>
            
-            <textarea id="education" rows="4" class="style-textareafields" placeholder="Degrees Name(Comma Separated)" required></textarea><br/><br/>
+            <textarea id="education" rows="4"  class="style-textareafields" placeholder="Degrees Name(Comma Separated)" required ></textarea><br/><br/>
+            </fieldset>
 
-            <h2>Experience</h2>
+            <!-- Field For Experience -->
+             <fieldset>
+            <legend><h2>Experience</h2></legend>
             
-            <textarea id="experience" rows="4" class="style-textareafields" placeholder="Put Experiences(Comma Separated)" required></textarea><br/><br/>
+            <textarea id="experience" rows="4"  class="style-textareafields" placeholder="Put Experiences(Comma Separated)" required></textarea><br/><br/>
+            </fieldset>
 
-            <h2>Skills</h2>
+            <!-- Field For Skills -->
+             <fieldset>
+            <legend><h2>Skills</h2></legend>
             
-            <textarea id="skills" rows="4" class="style-textareafields" placeholder="Put Skills(Comma Separated)" required></textarea><br/><br/>
-
-            <button type="submit">Generate Resume</button>
-            <br/><br/>
+            <textarea id="skills" rows="4"  class="style-textareafields" placeholder="Put Skills(Comma Separated)" required></textarea><br/><br/>
+            </fieldset>
+            <br /><br />
+            <button type="submit" >Generate Resume</button>
         </form>
-    </div>    
+        <br /><br />
+    </div>  
 
-
+     <!-- Resume Display Section -->
     <div class="main-containers" id="resume-section">
-        <!-- Resume Display Section -->
         <header>
             <div id="header">
             <div>
